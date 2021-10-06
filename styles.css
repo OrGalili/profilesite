@@ -1,3 +1,70 @@
+#hi {
+  font-size: 3em;
+  font-family: Helvetica;
+  letter-spacing: -0.025em;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+
+.intro-text-1, .intro-text-2 {
+  transition: 1.5s ease;
+  display: inline-block;
+  float: left;
+}
+
+@keyframes waveHand {
+  0% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(-7deg); 
+  }
+  100% {
+    transform: rotate(7deg);
+  }
+}
+
+.intro-text-1 {
+  animation-name: waveHand;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  transform-origin: 90% 80%;
+  opacity:  1;
+}
+.intro-text-1.start {
+  opacity: 0;
+}
+
+.intro-text-2 {
+  width: auto;
+  opacity: 1;
+  margin-left: 12px;
+  max-width: 60px;
+}
+
+.intro-text-2.start {
+  width: 0;
+  opacity: 0;
+  max-width: 1px;
+}
+
+.start {
+  position: absolute;
+  opacity: 0;
+}
+
+
+.disappear{
+  opacity: 0;
+}
+
+/*-------------*/
+
+
 /* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
@@ -84,7 +151,8 @@ h2 {
 }
 
 h1 {
-  font-size: 333.3333333333333%;/*96px*/}
+  font-size: 6rem;/*96px*/
+}
 
 h2 {
   font-size: 4.2rem;/*67.2px*/
@@ -105,7 +173,7 @@ a {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -121,10 +189,6 @@ a {
 }
 
 @media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
   .nav-list {
     margin: 0 1rem;
   }
@@ -162,12 +226,27 @@ a {
 }
 
 .welcome-section > p {
+  
   font-size: 2rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
   width: 70%;
   margin-top: 10px;
+}
+
+.about{
+  transition: 1s ease;
+  opacity: 1;
+}
+
+.about.hide{
+  opacity: 0;
+}
+
+.hide{
+  position: absolute;
+  opacity: 0;
 }
 
 @media (max-width: 28.75em) /*460px*/{
