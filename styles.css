@@ -1,14 +1,3 @@
-#hi {
-  font-size: 3em;
-  font-family: Helvetica;
-  letter-spacing: -0.025em;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  height: 50px;
-}
-
-
 .intro-text-1, .intro-text-2 {
   transition: 1.5s ease;
   display: inline-block;
@@ -39,11 +28,21 @@
   opacity: 0;
 }
 
+@media only screen and (max-width:840px) {
+  #hi{
+    display: grid;
+  }
+
+  .intro-text-1{
+    transform-origin: 50% 50% 0;
+  }
+}
+
+
 .intro-text-2 {
   width: auto;
   opacity: 1;
-  margin-left: 12px;
-  max-width: 60px;
+  
 }
 
 .intro-text-2.start {
@@ -88,28 +87,28 @@
 
 html {
   box-sizing: border-box;
-
+  
   /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  * default document font size = 16px, 1rem = 16px, 100% = 16px
+  * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
   */
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 /* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
+* This helps automate a bit of responsiveness.
+* The trick is to use the rem unit for size values, margin and padding.
+* Because rem is relative to the document font size
+* when we scale up or down the font size on the document
+* it will affect all properties using rem units for the values.
 */
 
 /* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
+* The calculation is the following
+* screen size divided by browser base font size
+* As an example: a breakpoint at 980px
+* 980px / 16px = 61.25em
 */
 
 /* 1200px / 16px = 75em */
@@ -225,8 +224,7 @@ a {
   background-color: #ffffff;
 }
 
-.welcome-section > p {
-  
+#aboutParagraph {
   font-size: 2rem;
   font-weight: 200;
   font-style: italic;
@@ -253,12 +251,12 @@ a {
   .welcome-section {
     text-align: center;
   }
-
+  
   .box-img {
     width: 20%;
   }
-
-  .welcome-section > p{
+  
+  #aboutParagraph{
     width: 90%;
   }
 }
@@ -304,7 +302,7 @@ a {
   .projects-section {
     padding: 6rem 1rem;
   }
-
+  
   .projects-grid {
     grid-template-columns: 1fr;
   }

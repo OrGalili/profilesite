@@ -17,5 +17,10 @@ setTimeout(
         $(document).ready(function() {
             $( '.hide' ).removeClass( 'hide'); 
         });
+
+        $(document).ready(function() {
+            $('#hi').remove();
+        });
+
         
     }, 3000);
