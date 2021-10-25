@@ -355,6 +355,12 @@ video{
   background: var(--main-red);
 }
 
+.comming-soon{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .btn-show-all:hover > i {
   transform: translateX(2px);
 }
