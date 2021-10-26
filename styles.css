@@ -170,6 +170,11 @@ a {
 
 video{
   width:100%;
+  height: 65%;
+}
+
+.hover-14,.hover-15,.hover-16,.hover-17,.hover-18{
+  height: 20%;
 }
 
 
