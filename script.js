@@ -41,4 +41,4 @@ setTimeout(
             });
         });
         
-        observer.observe(document.querySelector('#skills'));
+        observer.observe(document.querySelector('#wpfskill'));
