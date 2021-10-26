@@ -276,9 +276,11 @@ video{
 }
 
 .projects-section-header {
-  max-width: 640px;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: normal;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem;
 }
 
 @media (max-width: 28.75em) {
