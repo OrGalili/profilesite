@@ -239,7 +239,6 @@ video{
   font-size: 2rem;
   font-weight: 200;
   font-style: italic;
-  color: var(--main-red);
   width: 70%;
   margin-top: 10px;
 }
