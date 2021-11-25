@@ -1,6 +1,10 @@
 @import 'hover.css';
 @import 'skills.css';
 
+#hand{
+  font-weight: normal;
+}
+
 .intro-text-1, .intro-text-2 {
   transition: 1.5s ease;
   display: inline-block;
